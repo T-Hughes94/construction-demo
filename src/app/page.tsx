@@ -12,7 +12,7 @@ export default function Home() {
       <Header />
       <Hero />
       <Services />
-      <About />
+      <About layout="side-by-side" />
       <Contact />
       <Footer />
     </>
