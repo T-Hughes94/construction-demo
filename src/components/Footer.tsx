@@ -3,8 +3,12 @@ import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/f
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-gray-200 py-10">
-      <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
+    <footer
+      className="relative bg-fixed bg-cover bg-center text-gray-200 py-10"
+      style={{ backgroundImage: "url('/prints.jpeg')" }} // Reference to the image in the public folder
+    >
+      <div className="absolute inset-0 bg-black opacity-50"></div> {/* Dark overlay for contrast */}
+      <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8 relative z-10">
         {/* Contact Information */}
         <div>
           <h3 className="text-xl font-bold mb-4">Contact Us</h3>
@@ -70,3 +74,5 @@ const Footer = () => {
 };
 
 export default Footer;
+
+
