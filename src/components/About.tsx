@@ -1,8 +1,8 @@
 const About = ({
     layout = 'side-by-side', // default layout
     title = "About Us",
-    content = "Valley Construction Supply has been serving the construction industry for over 25 years. Our mission is to provide top-quality materials and exceptional service to our customers, helping them complete their projects on time and within budget.",
-    imageSrc = "/Consimg.jpg",
+    content = "Mock-Up Construction Supply has been serving the construction industry for over 25 years. Our mission is to provide top-quality materials and exceptional service to our customers, helping them complete their projects on time and within budget.",
+    imageSrc = "/mockup.png",
   }) => {
     return (
       <section className="py-20 bg-white">

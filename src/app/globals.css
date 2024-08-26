@@ -2,3 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.border-animation img {
+  border-color: #fbbf24; /* yellow-500 */
+}
+
+.border-animation div {
+  border-color: #fbbf24; /* yellow-500 */
+}
