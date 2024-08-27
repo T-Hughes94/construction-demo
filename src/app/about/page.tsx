@@ -1,7 +1,8 @@
 import Header from '@/components/Header';
 import About from '@/components/About';
 import Footer from '@/components/Footer';
-import Link from 'next/link';  // Import Link from Next.js
+import Link from 'next/link';
+import Image from 'next/image'; // Import Image from Next.js
 
 export default function AboutPage() {
   return (
@@ -39,9 +40,11 @@ export default function AboutPage() {
               { name: 'Brittney Doe', role: 'Operations', phone: '(123) 456-7893', imageSrc: '/emp4.jpg' },
             ].map((member) => (
               <div key={member.name} className="bg-blue-900 text-white rounded-lg border-4 border-yellow-500 shadow-lg p-6 text-center transform transition-transform hover:scale-105">
-                <img
+                <Image
                   src={member.imageSrc}
                   alt={`Team Member ${member.name}`}
+                  width={128} // Adjust width and height according to your design needs
+                  height={128}
                   className="w-32 h-32 mx-auto rounded-full mb-4 object-cover border-4 border-yellow-500"
                 />
                 <h3 className="text-xl font-semibold mb-2">{member.name}</h3>
@@ -116,6 +119,7 @@ export default function AboutPage() {
     </>
   );
 }
+
 
 
 

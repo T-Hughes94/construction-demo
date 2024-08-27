@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 const serviceDetailsData = [
   {
     title: 'Construction Materials',
@@ -42,9 +44,11 @@ const ServiceDetails = () => {
           <div key={service.title} className={`flex flex-col md:flex-row ${index % 2 === 0 ? '' : 'md:flex-row-reverse'} items-center mb-20`}>
             {/* Image Section */}
             <div className="w-full md:w-1/2 mb-10 md:mb-0 relative group">
-              <img
+              <Image
                 src={service.imageSrc}
                 alt={service.title}
+                width={500} // Adjust the width according to your needs
+                height={300} // Adjust the height according to your needs
                 className="w-full h-auto object-cover rounded-lg shadow-lg border-4 border-transparent group-hover:border-yellow-500 transition-all duration-500 ease-in-out"
               />
               <div className="absolute inset-0 rounded-lg border-4 border-transparent group-hover:border-yellow-500 transition-all duration-500 ease-in-out"></div>
@@ -73,6 +77,7 @@ const ServiceDetails = () => {
 };
 
 export default ServiceDetails;
+
 
 
 

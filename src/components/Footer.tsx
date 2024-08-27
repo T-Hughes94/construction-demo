@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image'; // Import next/image for optimized image handling
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa'; // Social Media Icons
 
 const Footer = () => {
@@ -12,10 +13,12 @@ const Footer = () => {
         
         {/* Logo and Contact Information */}
         <div className="md:col-span-1 flex flex-col items-start">
-          <img
+          <Image
             src="/mockup.png" // Replace with your actual logo path in the public folder
             alt="Mockup Construction Logo"
-            className="w-32 h-auto mb-4" // Adjust size as needed
+            width={128} // Adjust width according to your needs
+            height={64} // Adjust height according to your needs
+            className="mb-4" // Adjust size as needed
           />
           <div>
             <h3 className="text-lg font-semibold mb-2">Contact Us</h3>
@@ -90,6 +93,7 @@ const Footer = () => {
 };
 
 export default Footer;
+
 
 
 
