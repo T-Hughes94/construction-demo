@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import Image from 'next/image'; // Import next/image for optimized image handling
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa'; // Social Media Icons
 
 const Footer = () => {
@@ -11,20 +10,11 @@ const Footer = () => {
       <div className="absolute inset-0 bg-black opacity-50"></div> {/* Dark overlay for contrast */}
       <div className="container mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-4 gap-8 relative z-10">
         
-        {/* Logo and Contact Information */}
+        {/* Contact Information */}
         <div className="md:col-span-1 flex flex-col items-start">
-          <Image
-            src="/mockup.png" // Replace with your actual logo path in the public folder
-            alt="Mockup Construction Logo"
-            width={128} // Adjust width according to your needs
-            height={64} // Adjust height according to your needs
-            className="mb-4" // Adjust size as needed
-          />
-          <div>
-            <h3 className="text-lg font-semibold mb-2">Contact Us</h3>
-            <p className="mb-1">info@mockupconstruction.com</p>
-            <p className="mb-1">(123) 456-7890</p>
-          </div>
+          <h3 className="text-lg font-semibold mb-2">Contact Us</h3>
+          <p className="mb-1">info@mockupconstruction.com</p>
+          <p className="mb-1">(123) 456-7890</p>
         </div>
 
         {/* Address Section */}
@@ -93,6 +83,7 @@ const Footer = () => {
 };
 
 export default Footer;
+
 
 
 

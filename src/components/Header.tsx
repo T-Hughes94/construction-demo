@@ -1,13 +1,14 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="bg-gray-800 text-white shadow-lg fixed w-full z-50">
+    <header className="bg-gray-800 text-white shadow-lg sticky top-0 w-full z-50">
+
       <div className="container mx-auto flex justify-between items-center px-6 py-4">
         {/* Company Logo */}
         <div className="flex items-center space-x-3">
